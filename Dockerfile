@@ -45,8 +45,8 @@ COPY --from=client --chown=node:node /app/build public
 COPY --from=client --chown=node:node /app/build/index.html views/index.ejs
 
 #VOLUME /app/public/user-avatars
-VOLUME /app/public/project-background-images
-VOLUME /app/private/attachments
+#VOLUME /app/public/project-background-images
+#VOLUME /app/private/attachments
 
 EXPOSE 1337
 
